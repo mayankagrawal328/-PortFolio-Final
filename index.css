@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(0, 0, 0);    
+}
+nav{
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    height: 8vh;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: #ff0000;
+}
+nav ul{
+    float:right;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 8vh;
+    padding-right: 6vw;
+}
+
+nav .Name{
+    line-height: 8vh;
+    padding: 2%;
+    font-size: 250%;
+    color: rgb(255, 255, 255);
+}
+nav .Name span{
+    color: red;
+}
+
+#threeline{
+    display: none;
+    position: absolute;
+    color: white;
+    float: right;
+    line-height: 8vh; 
+    margin: 0% 90%;
+    font-size: large;
+    font: bold;
+}
+#threeline1{
+    display: none;
+}
+
+#photo{
+    width: 30%;
+    float: right;
+}
+
+
+button {
+    background-color:  rgb(49, 49, 49);
+    border: none;
+    color: rgb(255, 0, 0);
+    border-radius: 15%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 95%;
+    box-shadow: 0px 0px 15px 1px rgb(0, 0, 0);
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+#button1{
+    padding: 40% 70%;
+}
+#button2{
+    padding: 26% 25%;
+}
+#button3{
+    padding: 22% 15%;
+}
+button:hover {
+    box-shadow: 0px 10px 40px 1px rgb(0, 0, 0);
+  }
+
+#job{
+    transition: all 0.9s ease-in-out;
+    position: absolute;
+    /*JS margin: 10% 0%;*/
+    padding-left: 22%;
+    font-size: 170%;
+    color: #ffffff;
+}
+
+.SubTitle{
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    margin: 12% 0%;
+    /* js padding-left: 22%;*/
+    font-size: 250%;
+    color: #ffffff;    
+}
+.SubTitle span{
+    color: #fb0303;
+}
+
+
+
+
+#About{
+    background-color: rgb(49, 49, 49);
+    margin-top: 85vh;
+    padding: 25%;
+    z-index: 0;
+}
+#About #first{
+    position: absolute;
+    top: 120vh;
+    z-index: 1;
+    left: 45vw;
+    color: red;
+    font-size: 250%;
+    font: bolder;
+}
+#About ul{
+    position: absolute;
+    left: 57vw;
+    top: 135vh;
+    z-index: 1;
+}
+#About ul li{
+    padding-right: 10vw;
+    display: inline-block;
+}
+#photo1{
+    position: absolute;
+    top: 135vh;
+    left: 2.5vw;
+    z-index: 1;
+    
+}
+#list1{
+    transition: all 0.06s;
+    transition: box-shadow 1s;
+    box-shadow: 0px 10px 40px 1px rgb(0, 0, 0);
+    color:#ffffff;
+    font-size: 120%;
+    border-radius: 5%;
+    padding: 1vh 1vw;
+    margin: 20vh 0vw;
+    margin-right: 5vw;
+}
+#list1 li{
+    padding: 0.5vh 0vw;
+}
+
+#list2{
+    transition: all 0.06s;
+    transition: box-shadow 1s;
+    box-shadow: 0px 10px 40px 1px rgb(0, 0, 0);
+    color:#ffffff;
+    font-size: 120%;
+    border-radius: 5%;
+    padding: 1vh 1vw;
+    margin: 20vh 0vw;
+    margin-right: 5vw;
+}
+#list2 span{
+    color: rgb(171, 43, 43);
+}
+#list2 a{
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+#list2 a:hover{
+    transition: 0.5s;
+    color: #000000;
+}
+#list2 li{
+    padding: 0.5vh 0vw;
+} 
+#edu{
+    transition: all 0.06s;
+    transition: box-shadow 1s;
+    border-radius: 5%;
+    padding: 1vh 1vw;
+    margin: 0vh 1vw;
+    margin-right: -12vw;
+    margin-left: 37vw;
+    margin-top: -11vh;
+    color: #ffffff;
+    box-shadow: 0px 10px 40px 1px rgb(0, 0, 0);
+}
+#LinkedIn{ 
+    position: absolute;
+    width: 5vw;
+    right: 80vw;
+    top: 250vh;
+}
+#gmail{ 
+    position: absolute;
+    width: 5vw;
+    right: 70vw;
+    top: 250vh;
+}
+#contact .first{
+    position: absolute;
+    bottom: -150vh;
+    left: 45vw;
+    color: red;
+    font-size: 250%;
+    font: bolder;
+
+}
+#contact{
+    z-index: 10;
+    background-color: #000000;
+    display: block;
+    padding: 10%;
+    padding-bottom: 33vh;
+}
+#photo3{
+    position: absolute;
+    right: 0;
+    top: 239vh;
+    width: 43%;
+}
+#contact #code{
+    position: absolute;
+    top: 270vh;
+    left: 20vw;
+    font-size: 150%;
+    color: #ffffff;
+}
+#contact #code > a{
+    padding-left: 4vw;
+    color: #ffffff;
+}
+#parallex{
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+
+@media screen and (max-width: 588px) {
+
+    nav .Name{
+        padding: 2%;
+        line-height: 8vh;
+        font-size: 200%;
+    }
+    
+    nav ul li{
+        padding-right: 2vw;
+    }
+
+  }
+
+  @media screen and (max-width: 413px) {
+
+
+    nav .Name{
+        padding: 3%;
+    }
+    nav ul{
+        display: none;
+    }
+
+    #threeline1:checked ~ ul > li{
+        display: block;
+        line-height: 30vh;
+        padding: 0.5vh 45vw;
+    }
+    #photo{
+        position: absolute;
+        width: 30%;
+        top: 15vh;
+        right: 0;
+    }
+    
+    nav #threeline{
+        display: block;
+    }
+
+    #threeline1:checked ~ ul{
+        display: block;
+        background-color: black;
+        
+    }
+    #job{
+        padding-left: 1%;
+        font-size: 118%;
+        color: #ffffff;
+    }
+    .SubTitle{
+        /*js padding-left: 2%;*/
+        font-size: 150%;
+        color: #ffffff;    
+    }
+    .SubTitle span{
+        color: #fb0303;
+    }
+    
+    #About ul{
+        position: absolute;
+        left: 0vw;
+        top: 0vh;
+    }
+    #About ul li{
+        padding-right: 0vw;
+        display: inline-block;
+    }
+
+button {
+        background-color:  rgb(49, 49, 49);
+        border: none;
+        color: rgb(255, 0, 0);
+        border-radius: 15%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 50%;
+        box-shadow: 0px 0px 15px 1px rgb(0, 0, 0);
+        cursor: pointer;
+        transition-duration: 0.4s;
+      }
+#button1{
+        padding: 10% 10%;
+    }
+#button2{
+        padding: 10% 10%;
+    }
+ #button3{
+        padding: 10% 10%;
+    }
+    
+
+#About{
+    background-color: rgb(49, 49, 49);
+    position: relative;
+    margin-top: 30vh;
+    padding: 44%;
+}
+#About #first{
+    position: absolute;
+    top: 5vh;
+    left: 45vw;
+    color: red;
+    font-size: 150%;
+    font: bolder;
+}
+#About ul{
+    position: absolute;
+    left: 37vw;
+    top: 10vh;
+}
+#About ul li{
+    padding-right: 10vw;
+    display: inline-block;
+}
+#photo1{
+    position: absolute;
+    top: 13vh;
+    left: 0;
+    width: 35%;
+    
+}
+#list1{
+    transition: all 0.06s;
+    transition: box-shadow 1s;
+    box-shadow: 0px 10px 40px 1px rgb(0, 0, 0);
+    color:#ffffff;
+    font-size: 45%;
+    border-radius: 5%;
+    padding: 1vh 1vw;
+    margin: 6vh 0vw;
+    margin-right: 0vw;
+}
+#list1 li{
+    padding: 0.5vh 0vw;
+}
+
+#list2{
+    transition: all 0.06s;
+    transition: box-shadow 1s;
+    box-shadow: 0px 10px 40px 1px rgb(0, 0, 0);
+    color:#ffffff;
+    font-size: 52%;
+    border-radius: 5%;
+    padding: 1vh 3vw;
+    margin: 6vh 0vw;
+    margin-right: 0vw;
+}
+#list2 a{
+    display:block;
+    color: rgb(255, 255, 255);
+    font-size: 80%;
+}
+#list2 a:hover{
+    transition: 0.5s;
+    color: #000000;
+}
+#list2 li{
+    padding: 0.5vh 0vw;
+} 
+#edu{
+    position: absolute;
+    top: 15vh;
+    transition: all 0.06s;
+    transition: box-shadow 1s;
+    border-radius: 5%;
+    font-size: 12%;
+    border-radius: 5%;
+    padding: 3vh 3vw;
+    margin: 0vh 0vw;
+    margin-right: 0vw;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    color: #ffffff;
+    box-shadow: 0px 10px 40px 1px rgb(0, 0, 0);
+}
+
+#LinkedIn{ 
+    position: absolute;
+    width: 5vw;
+    right: 80vw;
+    top: 109vh;
+}
+#gmail{ 
+    position: absolute;
+    width: 5vw;
+    right: 70vw;
+    top: 109vh;
+}
+#contact .first{
+    top: 107vh;
+    z-index: 1;
+    font-size: 150%;
+    bottom: -5vh;
+    font: bolder;
+}
+#contact{
+    z-index: 10;
+    background-color: #000000;
+    display: block;
+    padding: 9%;
+}
+#photo3{
+    right: 0;
+    top: 110vh;
+    width: 40%;
+}
+#contact #code{
+    position: absolute;
+    top: 114vh;
+    right: 30vw;
+    font: bolder;
+    font-size: 70%;
+    color: #ffffff;
+}
+#contact #code > a{
+    padding-left: 4vh;
+    color: #ffffff;
+}    
+  }
+/* display, line height
